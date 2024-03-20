@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+import tailwindcssAnimate from 'tailwindcss-animate'
+
+export default {
 	darkMode: ['class'],
 	content: [
 		'./pages/**/*.{ts,tsx}',
@@ -15,6 +17,23 @@ module.exports = {
 			screens: {
 				'2xl': '1400px',
 			},
+		},
+		fontSize: {
+			sm: '0.750rem',
+			base: '1rem',
+			xl: '1.333rem',
+			'2xl': '1.777rem',
+			'3xl': '2.369rem',
+			'4xl': '3.158rem',
+			'5xl': '4.210rem',
+		},
+		fontFamily: {
+			heading: 'Poppins',
+			body: 'Poppins',
+		},
+		fontWeight: {
+			normal: '400',
+			bold: '700',
 		},
 		extend: {
 			colors: {
@@ -73,5 +92,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [require('tailwindcss-animate')],
+	plugins: [tailwindcssAnimate],
 }
