@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import tailwindcssAnimate from 'tailwindcss-animate'
+import animate from 'tailwindcss-animate'
 
 export default {
 	darkMode: ['class'],
@@ -90,7 +90,10 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 			},
+			backgroundImage: {
+				'hero-pattern': "url('/img/topography.svg')",
+			},
 		},
 	},
-	plugins: [tailwindcssAnimate],
+	plugins: [animate],
 }
