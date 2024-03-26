@@ -32,7 +32,6 @@ function App() {
 					</div>
 				</div>
 			</div>
-			<div className="h-full w-full bg-primary bg-hero-pattern bg-repeat "></div>
 		</div>
 	)
 }
